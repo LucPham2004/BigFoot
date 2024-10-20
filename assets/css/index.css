@@ -1,0 +1,358 @@
+/* Common styles */
+.product-name {
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+    color: rgb(90, 90, 90);
+}
+
+.price {
+    color: black;
+    font-size: 15px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.originPrice {
+    font-size: 14px;
+}
+.description {
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    color: gray;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 14px;
+}
+/* Responsive font sizes */
+@media screen and (max-width: 768px) {
+    .product-name {
+        font-size: 12px;
+    }
+    
+    .description {
+        font-size: 8px;
+    }
+    
+    .price {
+        font-size: 12px;
+    }
+    .originPrice {
+        display: none;
+    }
+}
+
+/* Hover effects */
+.product-item:hover .product-name,
+.product-item:hover .price {
+    color: red;
+}
+
+/* Banner styles */
+.banner img {
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner, .carousel-item {
+        width: 100%;
+        height: 82vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner, .carousel-item {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Top-Seller Section */
+.top-seller, .favorite, .onSale, .feature, .sample{
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin-top: 3%;
+}
+
+.top-seller-products , .favorite-products, .onSale-products, .feature-products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.product-item img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.product-item a {
+    text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+    .product-item {
+        margin-top: 2%;
+        width: 16.666667%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .product-item {
+        margin-top: 2%;
+        width: 47%;
+    }
+}
+
+.product-item-placeholder {
+    background-color: #e0e0e0;
+    aspect-ratio: 1 / 1;
+    margin: 10px 10px;
+    animation: pulse 1.5s infinite;
+    border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+    .product-item-placeholder {
+        width: 15%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .product-item-placeholder {
+        width: 45%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Poster */
+.poster-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.poster-main-left, .poster-main-right-div {
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.poster-main-left img,
+.poster-main-right-div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-body {
+    margin: 2% 2% 2% 0;
+}
+
+.poster-main-right {
+    display: flex;
+    position: relative;
+}
+
+.poster-main-right-div a {
+    width: 100%;
+}
+
+.poster-main-right-div:hover,
+.poster-main-left:hover {
+    transform: scale(1.02);
+}
+
+@media screen and (min-width: 768px) {
+    .poster-main {
+        flex-direction: row;
+        margin-top: 10%;
+        margin-left: 15%;
+        width: 70%;
+    }
+    
+    .poster-main-left {
+        width: 62%;
+    }
+    
+    .poster-main-right {
+        width: 30%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .poster-main {
+        flex-direction: column;
+        margin-top: 5%;
+        margin-left: 10%;
+        width: 90%;
+    }
+    
+    .poster-main-right {
+        width: 90%;
+        flex-direction: row;
+    }
+    
+    .poster-main-left {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+}
+
+
+.fade-out {
+    opacity: 0;
+}
+
+/* Sample Product */
+
+.sample-product {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.sample-content {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .sample-product {
+        flex-direction: row;
+    }
+    
+    .sample-product img {
+        width: 40%;
+    }
+    
+    .sample-content {
+        width: 40%;
+        margin: 0 6%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sample-product {
+        flex-direction: column;
+    }
+    
+    .sample-product img,
+    .sample-content {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+.sample-product img {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 5%;
+}
+
+.sample-product img:hover {
+    transform: scale(1.02);
+}
+
+.sample-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.sample-content i {
+    width: 180px;
+    border: none;
+    height: 5px;
+    background-color: rgb(210, 0, 0);
+    margin-bottom: 30px;
+}
+
+/* Keyframes */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.intro-section {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.news-container {
+    margin: 50px auto;
+    max-width: 1200px;
+}
+.news-card img {
+    height: 200px;
+    object-fit: cover;
+}
+.news-card {
+    margin-bottom: 30px;
+}
+
+.notification {
+    position: fixed;
+    bottom: 10px;
+    right: 120px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    align-items: center;
+    z-index: 1000;
+}
+.notification p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+.notification button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.notification button:hover {
+    color: #ff6f61;
+}
+@media screen and (min-width: 1024px) {
+    .notification {
+        width: 420px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .notification {
+        width: 260px;
+    }
+}

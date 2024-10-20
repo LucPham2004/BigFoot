@@ -1,0 +1,1036 @@
+#menu-container {
+
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14%;
+  height: 100%;
+  padding-top: 20px;
+}
+#menu {
+  padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#content-tab {
+    margin-left: 14%;
+    width: 86%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+
+
+.app-content {
+    min-height: calc(100vh - 50px);
+    padding: 10px;
+    -webkit-transition: margin-left 0.3s ease;
+    -o-transition: margin-left 0.3s ease;
+    transition: margin-left 0.3s ease;
+  }
+  
+  @media (min-width: 768px) {
+    .app-content {
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .app-content {
+      margin-top: 10px;
+      min-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .app-content {
+      padding: 15px;
+    }
+  }
+  
+  @media print {
+    .app-content {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+  }
+  
+  
+  
+  .tile {
+    position: relative;
+    background: #ffffff;
+    border-radius: .375rem;
+    padding: 20px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media print {
+    .tile {
+      border: 1px solid #ddd;
+    }
+  }
+  
+  .tile.small {
+    padding: 0;
+  }
+  
+  .tile .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: #555;
+    border-radius: .357rem;
+  }
+  
+  .tile .overlay .l-text {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .tile .tile-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    /* text-align: center; */
+    border-bottom: 2px solid #FFD43B;
+    padding-bottom: 10px;
+    /* border-left: 3px solid black; */
+    padding-left: 5px;
+    color: black;
+  }
+  
+  .tile .tile-title-w-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tile .tile-title-w-btn p {
+    margin: 0;
+  }
+  
+  .tile .tile-title-w-btn .title {
+    margin: 0;
+  }
+  
+  .tile .tile-title-w-btn .side {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  .tile .tile-title-w-btn .btn-group {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  
+  .tile .tile-footer {
+    border-top: 1px solid #ddd;
+    padding: 20px 0 0 0;
+    margin-top: 10px;
+  }
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  
+.embed-responsive::before {
+    display: block;
+    content: "";
+  }
+  
+  .embed-responsive .embed-responsive-item,
+  .embed-responsive iframe,
+  .embed-responsive embed,
+  .embed-responsive object,
+  .embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  .embed-responsive-21by9::before {
+    padding-top: 42.8571428571%;
+  }
+  
+  .embed-responsive-16by9::before {
+    padding-top: 56.25%;
+  }
+  
+  .embed-responsive-4by3::before {
+    padding-top: 75%;
+  }
+  
+  .embed-responsive-1by1::before {
+    padding-top: 100%;
+  }
+  
+  
+  .widget-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 2px;
+    color: #FFF;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .widget-small .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 85px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2px 0 0 2px;
+    font-size: 2.5rem;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .widget-small .info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 20px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  
+  .widget-small .info h4 {
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #d20000;
+    font-size: 15px;
+  }
+  
+  .widget-small .info p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .widget-small.primary {
+    background-color: rgb(0, 28, 64);
+  }
+  
+  .widget-small.primary.coloured-icon {
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: .375rem;
+    padding: 10px;
+  }
+  
+  .widget-small.primary.coloured-icon .icon {
+    background-color: #b9ffd3;
+    color: #22ad56;
+    border-radius: .375rem;
+  }
+  
+  .widget-small.info {
+    background-color: #17a2b8;
+  }
+  
+  .widget-small.info.coloured-icon {
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: .375rem;
+    padding: 10px;
+  }
+  
+  .widget-small.info.coloured-icon .icon {
+    background-color: #adcbf3;
+    color: #1d5aab;
+    border-radius: .375rem;
+  }
+  
+  .widget-small.warning {
+    background-color: #ffc107;
+  }
+  
+  .widget-small.warning.coloured-icon {
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: .375rem;
+    padding:10px;
+  }
+  
+  .widget-small.warning.coloured-icon .icon {
+    background-color: #fde1c3;
+    color: #ff8b07;
+    border-radius: .375rem;
+  }
+  
+  .widget-small.danger {
+    background-color: #dc3545;
+  }
+  
+  .widget-small.danger.coloured-icon {
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: .375rem;
+    padding:10px;
+  }
+  
+  .widget-small.danger.coloured-icon .icon {
+    background-color: #f9baba;
+    color: #de2222;
+    border-radius: .375rem;
+  }
+  
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+thead{
+    text-align: center;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+#customer-table{
+    th:nth-child(1), td:nth-child(1) { width: 5%; text-align: center;}
+    th:nth-child(2), td:nth-child(2) { width: 15%; }
+    th:nth-child(3), td:nth-child(3) { width: 25%; }
+    th:nth-child(4), td:nth-child(4) { width: 10%; }
+    th:nth-child(5), td:nth-child(5) { width: 25%; }
+    th:nth-child(6), td:nth-child(6) { width: 20%; }
+}
+#product-table{
+    th:nth-child(1), td:nth-child(1) { width: 3%; text-align: center;}
+    th:nth-child(2), td:nth-child(2) { width: 15%; }
+    th:nth-child(3), td:nth-child(3) { width: 10%; text-align: center;}
+    th:nth-child(4), td:nth-child(4) { width: 15%; }
+    th:nth-child(5), td:nth-child(5) { width: 7%; text-align: center;}
+    th:nth-child(6), td:nth-child(6) { width: 13%; }
+    th:nth-child(7), td:nth-child(7) { width: 7%; text-align: center;}
+    th:nth-child(8), td:nth-child(8) { width: 15%; }
+}
+th {
+    background-color: #f2f2f2;
+}
+.btn {
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.customerBtn-edit, .productBtn-edit{
+    background-color: #4CAF50;
+    color: white;
+}
+.customerBtn-delete, .productBtn-delete{
+    background-color: #f44336;
+    color: white;
+}
+.customerBtn-showOrders, .productBtn-details{
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+#customer-table button, #product-table button{
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+/* Homepage content tab*/
+.content-tab {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Orders Tab */
+.orders {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 98%;
+    margin-left: 1%;
+}
+.orders h2 {
+    margin-top: 0;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+.orderInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.orderProducts{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+.orderProduct {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.orderProduct img {
+    flex: 0 0 150px; 
+    height: 150px;
+    object-fit: cover;
+}
+
+#filterForm:not(.search-container){
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  gap: 15px; /* Khoảng cách giữa các phần tử */
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Khoảng cách dưới form */
+}
+
+#filterForm label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+#filterForm input,
+#filterForm select {
+  flex: 1;
+  min-width: 150px; /* Đặt chiều rộng tối thiểu cho các phần tử */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#filterForm button {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#filterForm button:hover {
+  background-color: #0056b3;
+}
+
+#filterForm button[type="button"]:nth-child(2) {
+  background-color: #dc3545; 
+}
+
+#filterForm button[type="button"]:nth-child(2):hover {
+  background-color: #c82333;
+}
+
+#filterForm input[type="date"],
+#filterForm input[type="number"],
+#filterForm select {
+  max-width: 200px; /* Đặt chiều rộng tối đa cho các trường input và select */
+}
+
+@media (max-width: 768px) {
+  #filterForm {
+      flex-direction: column; /* Xếp chồng các phần tử khi trên màn hình nhỏ */
+      align-items: stretch;
+  }
+
+  #filterForm input,
+  #filterForm select,
+  #filterForm button {
+      width: 100%;
+  }
+}
+
+.SetOrderStatusBtn {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(54, 54, 250);
+}
+.showOrderProductsBtn {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(0, 181, 0);
+}
+.deleteOrderBtn {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+}
+
+/* Container for the select and buttons */
+#statusContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure it appears above other elements */
+  background-color: #fff; /* White background */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Spacing between elements */
+}
+
+/* Select field styling */
+#statusSelect {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Submit button styling */
+#submitButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for submit button */
+#submitButton:hover {
+  background-color: #218838;
+}
+
+/* Cancel button styling */
+#cancelButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for cancel button */
+#cancelButton:hover {
+  background-color: #c82333;
+}
+
+
+
+/* Customers Tab */
+.customer-tab {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Style for modal */
+#editModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: max-content;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#editModal h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+#editCustomerForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#editCustomerForm label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+#editCustomerForm input[type="text"],
+#editCustomerForm input[type="email"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#editCustomerForm button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#editCustomerForm button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+#editCustomerForm button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+#editCustomerForm button[type="button"] {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+#editCustomerForm button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+
+/* products info */
+.product-tab {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-item {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.productItem-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-item img {
+    flex: 0 0 150px; 
+    height: 150px;
+    object-fit: cover;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.productInfo p {
+    display: flexbox;
+    width: 12%;
+    text-align: center; 
+    margin: 0; 
+}
+
+.productInfo p:first-child {
+    font-weight: bold;
+    width: 28%; 
+    gap: 20px;
+}
+.total {
+    color: red;
+}
+
+
+
+
+.funtionsAndSearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-funtions {
+  display: flex;
+  gap: 10px;
+}
+
+.product-funtions .btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-funtions .btn:hover {
+  background-color: #0056b3;
+}
+.customer-funtions{
+    width: 70%;
+}
+.addProduct{
+    width: max-content;
+}
+.addBrand, .addCategory{
+    width: max-content;
+}
+
+.product-forms .card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-forms form {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-forms label {
+  font-weight: bold;
+  margin-bottom: 1px;
+  color: #333;
+}
+
+.product-forms input[type="text"],
+.product-forms input[type="number"],
+.product-forms textarea {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.product-forms input[type="file"] {
+  margin-bottom: 15px;
+}
+
+.product-forms button[type="submit"],
+.product-forms button[type="button"] {
+  padding: 10px 15px;
+  font-size: 14px;
+  width: 200px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-forms button[type="submit"]:hover,
+.product-forms button[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+.product-forms .card h5 {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+
+.horizontal-table .header {
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px 4px 0 0;
+}
+
+
+.horizontal-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.horizontal-table .column {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.horizontal-table .column div {
+    border-right: 1px solid black;
+    width: 90px;
+    padding: 5px;
+}
+.horizontal-table .column .header {
+    font-weight: bold;
+    border-right: 2px solid black;
+}  
+
+.brandForms, .categoryForms{
+    display: flex;
+    flex-direction: row;
+}
+
+.brandForms #addBrand, 
+.brandForms #deleteBrand, 
+.categoryForms #addCategory, 
+.categoryForms #deleteCategory{
+    width: 50%;
+}
+
+#addProductImage-container {
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure it appears above other elements */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Search button */
+
+.search-box {
+  display: flex;
+	width: 40px;
+	height: 40px;
+	background-color: #f3f3f3;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.5s ease;
+	border-radius: 15px;
+}
+
+.search-box.open {
+	width: 350px;
+}
+
+#CustomerSearchInput, #searchInput , #OrderSearchInput{
+	width: 100%;
+    height: 40px;
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	color: #000000;
+    padding: 10px;
+	font-size: 15px;
+    margin-top: -2px;
+    margin-left: -5px;
+}
+
+#CustomerSearchBtn, #searchButton , #OrderSearchBtn{
+	color: #000000;
+	outline: none;
+	border: none;
+	width: 40px;
+    height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	font-size: 15px;
+}
+#CustomerSearchBtn:hover, #searchButton:hover, #OrderSearchBtn:hover{
+    color: red;
+}
+
+.search-box.open {
+	width: 350px;
+}
+
+/*******/
+.shopNow-btn {
+    text-align:center;
+    width: 180px;
+    height: 45px;
+    margin: 20px;
+    border: none;
+    background-color: rgb(210, 0, 0);
+    transition: transform 0.3s ease;
+}
+.shopNow-btn{
+    text-decoration: none;
+    color: white;
+}
+.shopNow-btn:hover{
+    transform: scale(1.02)
+}
+
+/*******/
+.changeBtn {
+    text-align:center;
+    width: 180px;
+    height: 45px;
+    margin: 20px;
+    border: none;
+    background-color: rgb(210, 0, 0);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+.changeBtn:hover{
+    transform: scale(1.02)
+}
+
+
+
+/* Style cho các ô input */
+.sample-content input[type="text"] {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Style cho ô input file */
+.sample-content input[type="file"] {
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  font-size: 14px;
+}
+
+/* Style cho các nút button */
+.sample-content button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Nút Áp dụng */
+.sample-content button:first-of-type {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.sample-content button:first-of-type:hover {
+  background-color: #218838;
+}
+
+/* Nút Hủy */
+.sample-content button:last-of-type {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.sample-content button:last-of-type:hover {
+  background-color: #c82333;
+}

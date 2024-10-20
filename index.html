@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TL SHOP</title>
+    <link rel="icon" href="./assets/img/logo/logo.webp">
+    <link rel="stylesheet" href="assets/css/header-footer.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="banner">
+            <div class="container-fluid" style="padding: 0;">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+
+        <section id="about" class="intro-section">
+            <div class="w-75">
+                <h2 class="mb-4">Chào mừng đến với cửa hàng giày của chúng tôi!</h2>
+                <p>
+                    Chúng tôi cung cấp các mẫu giày thời trang cho tất cả các đối tượng từ thể thao đến văn phòng. Với thiết kế hiện đại và chất liệu cao cấp, cửa hàng chúng tôi luôn mang đến cho bạn những sản phẩm tốt nhất.
+                </p>
+                <p>
+                    Đừng bỏ lỡ những chương trình khuyến mãi đặc biệt và sự kiện hấp dẫn của chúng tôi!
+                </p>
+            </div>
+        </section>
+
+        <div class="top-seller">
+            <div class="container-fluid">
+                <h2 style="color: red;text-align:center;">| Sản Phẩm HOT Nhất!</h2>
+                <div class="top-seller-products"></div>
+            </div>
+        </div>
+
+        <div class="poster">
+            <div class="container-fluid">
+                <div class="poster-main">
+                    <div class="poster-main-left">
+                        <a href="#" style="text-decoration: none; color: black">
+                            <img class="card-img-top" alt="...">
+                        </a>
+                    </div>
+    
+                    <div class="poster-main-right">
+                        <div class="poster-main-right-div" style="margin-bottom: 10px;">
+                            <a href="#" style="text-decoration: none; color: black">
+                                <img alt="..." >
+                            </a>
+                        </div>
+                        <div class="poster-main-right-div">
+                            <a href="#" style="text-decoration: none; color: black">
+                                <img  alt="..." >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="favorite">
+            <div class="container-fluid">
+                <h3 style="color: red;margin-bottom:30px;text-align:center;">| Được Ưa Thích</h3>
+                <div class="favorite-products"></div>
+            </div>
+        </div>
+        
+        <div class="sample">
+            <div class="container">
+                <div class="sample-product">
+                    <div class="sample-content">
+                        <h3>Mẫu giày thể thao mới cho mùa hè</h3>
+                        <i></i>
+                        <p class="description">Khám phá mẫu giày thể thao mới, cực kỳ thoải mái cho mùa hè năng động.</p>
+                        <a href="./shop.html"><button class="shopNow-btn">Shop Ngay!</button></a>
+                    </div>
+                    <img alt="Sample Shoe">
+                </div>
+            </div>
+        </div>
+
+        <div class="onSale">
+            <div class="container-fluid">
+                <h3 style="color: red;margin-bottom:30px;text-align:center;">| Khuyến Mãi</h3>
+                <div class="onSale-products"></div>
+            </div>
+        </div>
+
+        <div class="container news-container">
+            <h3 style="color: red;margin-bottom:30px;text-align:center;">| Tin tức nổi bật!</h3>
+            <div class="row">
+                <!-- Bài viết tin tức 1 -->
+                <div class="col-md-3">
+                    <div class="card news-card">
+                        <img src="https://d1nymbkeomeoqg.cloudfront.net/photos/28/53/406870_3175_XL.jpg" class="card-img-top" alt="Giày mới">
+                        <div class="card-body">
+                            <h5 class="card-title">Bộ sưu tập giày thể thao mới 2024</h5>
+                            <p class="card-text">Khám phá bộ sưu tập giày mới với thiết kế hiện đại và chất liệu cao cấp.</p>
+                            <a href="#" class="btn btn-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bài viết tin tức 2 -->
+                <div class="col-md-3">
+                    <div class="card news-card">
+                        <img src="https://img.freepik.com/free-psd/shoes-sale-social-media-post-square-banner-template-design_505751-6081.jpg" class="card-img-top" alt="Khuyến mãi">
+                        <div class="card-body">
+                            <h5 class="card-title">Khuyến mãi đặc biệt tháng 10</h5>
+                            <p class="card-text">Giảm giá lên đến 50% cho tất cả các sản phẩm trong tháng 10 này!</p>
+                            <a href="#" class="btn btn-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bài viết tin tức 3 -->
+                <div class="col-md-3">
+                    <div class="card news-card">
+                        <img src="https://img.freepik.com/premium-vector/brand-new-exclusive-shoes-collection-social-media-banner-instagram-post-template_346454-637.jpg" class="card-img-top" alt="Sự kiện">
+                        <div class="card-body">
+                            <h5 class="card-title">Sự kiện giới thiệu sản phẩm mới</h5>
+                            <p class="card-text">Tham gia sự kiện ra mắt sản phẩm mới của chúng tôi vào cuối tuần này.</p>
+                            <a href="#" class="btn btn-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bài viết tin tức 4 -->
+                <div class="col-md-3">
+                    <div class="card news-card">
+                        <img src="https://github.com/LucPham2004/TL-Shop/raw/main/src/main/resources/static/img/products/Nike-React-Infinity-Run-Flyknit-3/Nike-React-Infinity-Run-Flyknit-3_1.png" class="card-img-top" alt="Sản phẩm độc quyền">
+                        <div class="card-body">
+                            <h5 class="card-title">Sản phẩm độc quyền chỉ có tại cửa hàng</h5>
+                            <p class="card-text">Đừng bỏ lỡ các sản phẩm giày phiên bản giới hạn độc quyền chỉ có tại cửa hàng.</p>
+                            <a href="#" class="btn btn-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Bài viết tin tức 5 -->
+                <div class="col-md-3">
+                    <div class="card news-card">
+                        <img src="https://i0.wp.com/www.tristate-ortho.com/wp-content/uploads/2024/05/Summer-Shoe-Wear-updated-3.png?fit=940%2C788&ssl=1" class="card-img-top" alt="Mẫu giày mới">
+                        <div class="card-body">
+                            <h5 class="card-title">Mẫu giày thể thao mới cho mùa hè</h5>
+                            <p class="card-text">Khám phá mẫu giày thể thao mới, cực kỳ thoải mái cho mùa hè năng động.</p>
+                            <a href="#" class="btn btn-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bài viết tin tức 6 -->
+                <div class="col-md-3">
+                    <div class="card news-card">
+                        <img src="https://thekeywine.vn/wp-content/uploads/2024/08/qua-tang-trung-thu-khach-hang-9.jpg" class="card-img-top" alt="Quà tặng khách hàng">
+                        <div class="card-body">
+                            <h5 class="card-title">Quà tặng khách hàng trung thành</h5>
+                            <p class="card-text">Nhận ngay quà tặng hấp dẫn khi mua sắm lần thứ 3 tại cửa hàng của chúng tôi.</p>
+                            <a href="#" class="btn btn-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bài viết tin tức 7 -->
+                <div class="col-md-3">
+                    <div class="card news-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSle3EqvxADxGij7HClJ8VcvWr3fBMQ2JNe_w&s" class="card-img-top" alt="Giảm giá lớn">
+                        <div class="card-body">
+                            <h5 class="card-title">Giảm giá lớn cho tuần lễ khai trương</h5>
+                            <p class="card-text">Giảm giá đến 70% trong tuần lễ khai trương chi nhánh mới của cửa hàng. Hãy đến ngay!</p>
+                            <a href="#" class="btn btn-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bài viết tin tức 8 -->
+                <div class="col-md-3">
+                    <div class="card news-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJVdsJpoJKrPem5_qq9evXEuOHaxG_qO5bpA&s" class="card-img-top" alt="Sự kiện thể thao">
+                        <div class="card-body">
+                            <h5 class="card-title">Tham gia sự kiện thể thao cùng chúng tôi</h5>
+                            <p class="card-text">Cùng chúng tôi tham gia sự kiện chạy bộ tại công viên vào cuối tuần này.</p>
+                            <a href="#" class="btn btn-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sample">
+            <div class="container">
+                <div class="sample-product">
+                    <img alt="Sample Shoe">
+                    <div class="sample-content">
+                        <h3>Khuyến mãi đặc biệt tháng 10</h3>
+                        <i></i>
+                        <p class="description">Giảm giá lên đến 50% cho tất cả các sản phẩm trong tháng 10 này!</p>
+                        <a href="./shop.html"><button class="shopNow-btn">Shop Ngay!</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="container-fluid">
+                <h3 style="color: red;margin-bottom:30px;text-align:center;">| Sản Phẩm Mới!</h3>
+                <div class="feature-products"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <p>Truyền tải dữ liệu lần đầu sẽ có chút chậm vì server đặt bên Châu Âu. Mong quý khách thông cảm.</p>
+        <button onclick="closeNotification()">✕</button>
+    </div>
+
+    <div id="loader" class="loader"></div>
+    
+    <script>
+        function closeNotification() {
+            var notification = document.getElementById('notification');
+            notification.style.display = 'none';
+        }
+    </script>
+
+    <!-- scroll to top button -->
+    <script>
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            // <!-- Button scroll to top -->
+            if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 500) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; // Dành cho Safari
+            document.documentElement.scrollTop = 0; //Dành cho Chrome, Firefox, IE với Opera
+        }
+
+    </script>
+    
+    <script src="assets/js/admin/contentManage.js"></script>
+    <script src="assets/js/fetchProducts.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/searchAndRedirect.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

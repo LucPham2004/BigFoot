@@ -1,0 +1,218 @@
+
+
+.main{
+    width: 90%;
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.brand-category{
+    width: 20%;
+    position: sticky;
+    float: left;
+    top: 15%;
+    z-index: 999;
+}
+
+.category-item{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.category-item a{
+    color: black;
+    text-decoration: none;
+}
+.category-item a:hover{
+    color: red;
+}
+
+@media screen and (max-width:768px) {
+    .brand-category ul {
+        padding: 0 10px;
+    }
+}
+
+
+.sortAndShowProducts{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 20%;
+}
+.sorting{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+.sorting #sort{
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Định dạng các nhãn */
+.form-group label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Định dạng các trường nhập liệu */
+.form-group input[type="number"] {
+    width: 150px;
+    height: 35px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Định dạng các nút */
+.form-group button {
+    width: 80px;
+    height: 35px;
+    padding: 5px 5px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Màu nền và chữ của nút Lọc */
+.form-group button:nth-of-type(1) {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Màu nền và chữ của nút Hủy lọc */
+.form-group button:nth-of-type(2) {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Thay đổi màu nền khi di chuột qua nút */
+.form-group button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+.Products{
+    width: 100%;
+    min-height: 100vh;
+}
+#products-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-item {
+    width: 24%;
+    margin-bottom: 20px;
+    transition: opacity 0.2s ease;
+    color: black;
+}
+
+.product-item a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .product-item {
+        width: 47%;
+    }
+}
+
+.product-item .product-name, 
+.product-item .description, 
+.product-item .price {
+    text-align: center;
+    color: black;
+}
+.product-item img{
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: opacity 0.2s ease;
+}
+.product-item:hover *{
+    color: red;
+}
+.description{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.originPrice {
+    font-size: 14px;
+}
+
+.product-item-placeholder {
+    background-color: #e0e0e0;
+    aspect-ratio: 1 / 1;
+    width: 22%;
+    margin: 10px 10px;
+    animation: pulse 1.5s infinite;
+    border-radius: 8px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.notification {
+    position: fixed;
+    bottom: 10px;
+    right: 120px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    align-items: center;
+    z-index: 1000;
+}
+.notification p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+.notification button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.notification button:hover {
+    color: #ff6f61;
+}
+@media screen and (min-width: 1024px) {
+    .notification {
+        width: 420px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .notification {
+        width: 260px;
+    }
+}
