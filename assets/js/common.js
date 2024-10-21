@@ -5,20 +5,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const headerHTML = `
     <header>
         <div class="header-container">
-            <a href="../index.html">
-                <div id="logo"><img src="../assets/img/logo/logo.webp"></div>
+            <a href="index.html">
+                <div id="logo"><img src="assets/img/logo/logo.webp"></div>
             </a>
             <div class="header-menu d-none d-lg-flex">
-                <a href="../index.html"><div class="header-item">Home</div></a>
-                <a href="../about.html"><div class="header-item">Giới thiệu</div></a>
-                <a href="../news.html"><div class="header-item">Tin tức</div></a>
-                <a href="../contact.html"><div class="header-item">Liên hệ</div></a>
-                <a href="../shop.html"><div class="header-item" style="width:150px;">Tất cả sản phẩm</div></a>
+                <a href="index.html"><div class="header-item">Home</div></a>
+                <a href="about.html"><div class="header-item">Giới thiệu</div></a>
+                <a href="news.html"><div class="header-item">Tin tức</div></a>
+                <a href="contact.html"><div class="header-item">Liên hệ</div></a>
+                <a href="shop.html"><div class="header-item" style="width:150px;">Tất cả sản phẩm</div></a>
                 <h5 style="margin-bottom: 15px; margin-left:10px; align-self:center; color:rgb(89, 89, 89);">|</h5>
-                <a href="../shop.html?category=Adidas"><div class="header-item">Adidas</div></a>
-                <a href="../shop.html?category=Nike"><div class="header-item">Nike</div></a>
-                <a href="../shop.html?category=Thể Thao"><div class="header-item">Thể Thao</div></a>
-                <a href="../shop.html?category=Giày Da"><div class="header-item">Giày Da</div></a>
+                <a href="shop.html?category=Adidas"><div class="header-item">Adidas</div></a>
+                <a href="shop.html?category=Nike"><div class="header-item">Nike</div></a>
+                <a href="shop.html?category=Thể Thao"><div class="header-item">Thể Thao</div></a>
+                <a href="shop.html?category=Giày Da"><div class="header-item">Giày Da</div></a>
             </div>
             <div class="header-rightPart">
                 <div class="search-box">
