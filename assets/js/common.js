@@ -6,15 +6,18 @@ document.addEventListener("DOMContentLoaded", function() {
     <header>
         <div class="header-container">
             <a href="index.html">
-                <div id="logo"><img src="assets/img/logo/logo.webp"></div>
+                <div id="logo">
+                    <img src="assets/img/logo/logo.webp">
+                    <span>BigFoot</span>
+                </div>
             </a>
             <div class="header-menu d-none d-lg-flex">
                 <a href="index.html"><div class="header-item">Home</div></a>
                 <a href="about.html"><div class="header-item">Giới thiệu</div></a>
                 <a href="news.html"><div class="header-item">Tin tức</div></a>
                 <a href="contact.html"><div class="header-item">Liên hệ</div></a>
-                <a href="shop.html"><div class="header-item" style="width:150px;">Tất cả sản phẩm</div></a>
                 <h5 style="margin-bottom: 15px; margin-left:10px; align-self:center; color:rgb(89, 89, 89);">|</h5>
+                <a href="shop.html"><div class="header-item" style="width:150px;">Tất cả sản phẩm</div></a>
                 <a href="shop.html?category=Adidas"><div class="header-item">Adidas</div></a>
                 <a href="shop.html?category=Nike"><div class="header-item">Nike</div></a>
                 <a href="shop.html?category=Thể Thao"><div class="header-item">Thể Thao</div></a>
@@ -34,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <!-- Hamburger icon for mobile -->
             <div class="d-lg-none">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                    <img class="navbar-toggler-icon" src="../assets/img/logo/menu-bar.png">
+                    <img class="navbar-toggler-icon" src="assets/img/logo/menu-bar.png">
                 </button>
             </div>
         </div>
@@ -46,12 +49,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <a href="../index.html"><div class="header-item">Home</div></a>
-                <a href="../shop.html"><div class="header-item" style="width:150px;">Tất cả sản phẩm</div></a>
-                <a href="../shop.html?category=Adidas"><div class="header-item">Adidas</div></a>
-                <a href="../shop.html?category=Nike"><div class="header-item">Nike</div></a>
-                <a href="../shop.html?category=Thể Thao"><div class="header-item">Thể Thao</div></a>
-                <a href="../shop.html?category=Giày Da"><div class="header-item">Giày Da</div></a>
+                <a href="index.html"><div class="header-item">Home</div></a>
+                <a href="shop.html"><div class="header-item" style="width:150px;">Tất cả sản phẩm</div></a>
+                <a href="shop.html?category=Adidas"><div class="header-item">Adidas</div></a>
+                <a href="shop.html?category=Nike"><div class="header-item">Nike</div></a>
+                <a href="shop.html?category=Thể Thao"><div class="header-item">Thể Thao</div></a>
+                <a href="shop.html?category=Giày Da"><div class="header-item">Giày Da</div></a>
             </div>
         </div>
     </header>
@@ -60,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasCartLabel">Giỏ Hàng</h5>
-            <a href="../payment.html"><div class="orderBtn">Đặt hàng</div></a>
+            <a href="payment.html"><div class="orderBtn">Đặt hàng</div></a>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -80,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <div style="background-color: black;display:flex;justify-content:center;margin-top:5%;">
             <div id="a-bar">
                 <p>Rất nhiều sản phẩm bạn có thể lựa chọn</p>
-                <a href="../shop.html"><button class="shopNow-btn">Xem Tất Cả Sản Phẩm</button></a>
+                <a href="shop.html"><button class="shopNow-btn">Xem Tất Cả Sản Phẩm</button></a>
             </div>
         </div>
         <div class="container-fluid p-0">
@@ -94,15 +97,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         <a href="">Find a Store</a>
                     </div>
                     <div class="footer-links">
-                        <a href="../shop.html">Shop</a>
-                        <a href="../user/profile.html">Order Status</a>
-                        <a href="../user/profile.html">Shipping Information</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="user/profile.html">Order Status</a>
+                        <a href="user/profile.html">Shipping Information</a>
                         <a href="">Returns</a>
                     </div>
                     <div class="footer-links">
                         <a href="">About Us</a>
-                        <a href="../shop.html">For You</a>
-                        <a href="../user/profile.html">My Account</a>
+                        <a href="shop.html">For You</a>
+                        <a href="user/profile.html">My Account</a>
                     </div>
                 </div>
                 <div class="para">
@@ -118,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <a href="">MY</a>
                 <a href="">Pivacy Policy</a>
                 <a href="">Website Terms & Conditions</a>
-                <p>Nhóm 10 - TMĐT - Copyright - 2024</p>
+                <p>BigFoot - Nhóm 10 TMĐT - Copyright 2024</p>
             </div>
         </div>
     </footer>
@@ -155,8 +158,8 @@ function changeLoginOrProfileHeaderPart() {
                 <i class="fas fa-user-circle"></i> Profile
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../user/profile.html">Profile</a></li>
-                <li><a class="dropdown-item" href="../admin/admin.html">Quản lý Website</a></li>
+                <li><a class="dropdown-item" href="user/profile.html">Profile</a></li>
+                <li><a class="dropdown-item" href="admin/admin.html">Quản lý Website</a></li>
                 <li><a class="dropdown-item" href="#" onclick="logout()">Đăng xuất<i class="fas fa-arrow-circle-right" style="margin-left: 15px;"></i></a></li>
             </ul>
         </div>
@@ -169,7 +172,7 @@ function changeLoginOrProfileHeaderPart() {
                     <i class="fas fa-user-circle"></i> Profile
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../user/profile.html" onclick="redirectToProfilePageWithJWT()">Profile</a></li>
+                    <li><a class="dropdown-item" href="user/profile.html" onclick="redirectToProfilePageWithJWT()">Profile</a></li>
                     <li><a class="dropdown-item" href="#" onclick="logout()">Đăng xuất<i class="fas fa-arrow-circle-right" style="margin-left: 15px;"></i></a></li>
                 </ul>
             </div>

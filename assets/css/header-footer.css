@@ -55,8 +55,10 @@ header a:hover{
     color: red;
 }
 #logo{
-    width: 5%;
     margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 #logo img{
     width: 50px;
@@ -118,7 +120,7 @@ header a:hover{
 }
 @media screen and (min-width: 769px) {
     #logo{
-        width: 5%;
+        width: fit-content;
         margin-left: 50px;
     }
     .header-item, .cart{
