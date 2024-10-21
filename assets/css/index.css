@@ -310,12 +310,26 @@
     margin: 50px auto;
     max-width: 1200px;
 }
+.news-container a {
+    text-decoration: none;
+}
 .news-card img {
     height: 200px;
     object-fit: cover;
 }
+.news-item {
+    transition: all ease 0.5s;
+}
 .news-card {
     margin-bottom: 30px;
+    color: black;
+    text-decoration: none;
+}
+.news-item:hover{
+    transform: scale(1.02);
+}
+.news-item:hover h5{
+    color: red;
 }
 
 .notification {

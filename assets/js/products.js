@@ -214,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(!customerId) {
             alert("Quý khách vui lòng đăng nhập tài khoản!");
             window.location.href = "/login.html";
+            return;
         }
 
         const reviewTitle = document.getElementById('reviewTitle').value;

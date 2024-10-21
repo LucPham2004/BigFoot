@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
             </a>
             <div class="header-menu d-none d-lg-flex">
                 <a href="../index.html"><div class="header-item">Home</div></a>
+                <a href="../about.html"><div class="header-item">Giới thiệu</div></a>
+                <a href="../news.html"><div class="header-item">Tin tức</div></a>
+                <a href="../contact.html"><div class="header-item">Liên hệ</div></a>
                 <a href="../shop.html"><div class="header-item" style="width:150px;">Tất cả sản phẩm</div></a>
                 <h5 style="margin-bottom: 15px; margin-left:10px; align-self:center; color:rgb(89, 89, 89);">|</h5>
                 <a href="../shop.html?category=Adidas"><div class="header-item">Adidas</div></a>
