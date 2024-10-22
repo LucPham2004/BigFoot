@@ -90,22 +90,21 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="footer-top">
                 <div style="display: flex;flex-direction:row;gap:20px 0;width:100%">
                     <div class="footer-links">
-                        <a href="">Help</a>
-                        <a href="">Contact Us</a>
-                        <a href="">FAQ</a>
-                        <a href="">Size Guide</a>
-                        <a href="">Find a Store</a>
+                        <a href="">Trợ giúp</a>
+                        <a href="">Liên hệ</a>
+                        <a href="">FAQs</a>
+                        <a href="">Tìm cửa hàng gần bạn</a>
                     </div>
                     <div class="footer-links">
-                        <a href="shop.html">Shop</a>
-                        <a href="user/profile.html">Order Status</a>
-                        <a href="user/profile.html">Shipping Information</a>
-                        <a href="">Returns</a>
+                        <a href="shop.html">Tất cả sản phẩm</a>
+                        <a href="user/profile.html">Trạng thái đơn hàng</a>
+                        <a href="user/profile.html">Thông tin vận chuyển</a>
+                        <a href="">Trả hàng</a>
                     </div>
                     <div class="footer-links">
-                        <a href="">About Us</a>
-                        <a href="shop.html">For You</a>
-                        <a href="user/profile.html">My Account</a>
+                        <a href="">Giới thiệu</a>
+                        <a href="">Cách chọn cỡ giày</a>
+                        <a href="shop.html">Dành cho bạn</a>
                     </div>
                 </div>
                 <div class="para">
@@ -118,10 +117,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
             </div>
             <div class="footer-bottom">
-                <a href="">MY</a>
-                <a href="">Pivacy Policy</a>
-                <a href="">Website Terms & Conditions</a>
-                <p>BigFoot - Nhóm 10 TMĐT - Copyright 2024</p>
+                <div class="social-share">
+                    <button>
+                        <img src="./assets/img/logo/facebook.png">
+                    </button>
+                    <button>
+                        <img src="./assets/img/logo/twitter.png">
+                    </button>
+                    <button>
+                        <img src="./assets/img/logo/zalo.webp">
+                    </button>
+                </div>
+                <a href="">Chính sách dịch vụ</a>
+                <a href="">Điều khoản & Điều kiện của Trang web</a>
+                <p style="margin:0;">BigFoot - Nhóm 10 TMĐT - Copyright 2024</p>
             </div>
         </div>
     </footer>
