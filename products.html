@@ -99,12 +99,12 @@
         <div class="review-container">
             <div class="reviewForm-container">
                 <form id="reviewForm">
-                    <div class="row mb-2">
-                        <div class="col-12">
+                    <div class="d-flex mb-2">
+                        <div class="">
                             <label for="reviewTitle">Tiêu đề:</label>
                             <input type="text" id="reviewTitle" required>
                         </div>
-                        <div class="col-4">
+                        <div class="">
                             <label for="rating">Đánh giá:</label>
                             <select id="rating" required>
                                 <option value="5">5★</option>
@@ -118,15 +118,15 @@
                     <div class="row">
                         <div class="col-12">
                             <label for="comment">Bình luận:</label>
-                            <textarea id="comment" required></textarea>
+                            <textarea id="comment" class="w-100" required></textarea>
                         </div>
-                        <button class="col-12" type="submit">Thêm Đánh giá</button>
+                        <button class="col-12 ms-2" type="submit">Thêm Đánh giá</button>
                     </div>
                 </form>
                 <div style="display: flex;justify-content:center;"><hr style="width:80%;"></div>
             </div>
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseReview" aria-expanded="false" aria-controls="collapseReview">
-                    Các đánh giá, bình luận
+            <button class="mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReview" aria-expanded="false" aria-controls="collapseReview">
+                    Xem đánh giá, bình luận
             </button>
             <div class="collapse show" id="collapseReview">
                 <div class="card card-body"></div>
@@ -136,7 +136,7 @@
 
     <div style="display: flex;justify-content:center;margin:3% 0;"><hr style="width:80%;"></div>
 
-    <!-- <div class="similar">
+    <div class="similar">
         <div class="similar-container">
             <h3 style="color: red;margin-bottom:30px">| Sản phẩm tương tự</h3>
             <div class="similar-products-top" id="similar-products-top"></div>
@@ -156,7 +156,7 @@
                 </button>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div id="notification" style="display:none; position:fixed; top:10%; left:45%; background-color:lightgray; padding:10px; border-radius:5px;">
         Đã thêm vào giỏ hàng!

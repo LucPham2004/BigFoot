@@ -36,6 +36,9 @@ header a:hover{
     flex-direction: row;
     margin-left: 3%;
 }
+.header-menu a{
+    text-align: center;
+}
 .header-rightPart{
     display: flex;
     flex-direction: row;
@@ -126,7 +129,7 @@ header a:hover{
     .header-item, .cart{
         width: 85px;
         margin-left: 5%;
-        margin-top: 10px;
+        margin-top: 12px;
         text-align: center;
     }
 }
@@ -157,7 +160,6 @@ header a:hover{
 
 .shopNow-btn {
     text-align:center;
-    width: 180px;
     height: 45px;
     margin: 20px;
     border: none;
@@ -170,6 +172,17 @@ header a:hover{
 }
 .shopNow-btn:hover{
     transform: scale(1.02)
+}
+
+@media screen and (max-width: 768px) {
+    .shopNow-btn {
+        width: max-content;
+    }
+}
+@media screen and (min-width: 768px) {
+    .shopNow-btn {
+        width: 180px;
+    }
 }
 
 .social-share button {

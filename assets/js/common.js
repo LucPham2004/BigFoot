@@ -8,15 +8,14 @@ document.addEventListener("DOMContentLoaded", function() {
             <a href="index.html">
                 <div id="logo">
                     <img src="assets/img/logo/logo.webp">
-                    <span>BigFoot</span>
+                    <span style="font-size:large;font-family: serif;">BigFoot</span>
                 </div>
             </a>
             <div class="header-menu d-none d-lg-flex">
-                <a href="index.html"><div class="header-item">Home</div></a>
                 <a href="about.html"><div class="header-item">Giới thiệu</div></a>
                 <a href="news.html"><div class="header-item">Tin tức</div></a>
                 <a href="contact.html"><div class="header-item">Liên hệ</div></a>
-                <h5 style="margin-bottom: 15px; margin-left:10px; align-self:center; color:rgb(89, 89, 89);">|</h5>
+                <h5 style="margin-bottom: 12px; margin-left:10px; align-self:center; color:rgb(89, 89, 89);">|</h5>
                 <a href="shop.html"><div class="header-item" style="width:150px;">Tất cả sản phẩm</div></a>
                 <a href="shop.html?category=Adidas"><div class="header-item">Adidas</div></a>
                 <a href="shop.html?category=Nike"><div class="header-item">Nike</div></a>
@@ -33,12 +32,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" class="cart" style="text-align: center;">
                     <i class="fas fa-cart-plus" style="font-size: 30px;text-align:center;"></i>
                 </div>
-            </div>
-            <!-- Hamburger icon for mobile -->
-            <div class="d-lg-none">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                    <img class="navbar-toggler-icon" src="assets/img/logo/menu-bar.png">
-                </button>
+                <!-- Hamburger icon for mobile -->
+                <div class="d-lg-none">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                        <img class="navbar-toggler-icon" style="width:40px;height:40px;" src="assets/img/logo/menu-bar.png">
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -97,8 +96,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                     <div class="footer-links">
                         <a href="shop.html">Tất cả sản phẩm</a>
-                        <a href="user/profile.html">Trạng thái đơn hàng</a>
-                        <a href="user/profile.html">Thông tin vận chuyển</a>
+                        <a href="">Trạng thái đơn hàng</a>
+                        <a href="">Thông tin vận chuyển</a>
                         <a href="">Trả hàng</a>
                     </div>
                     <div class="footer-links">
