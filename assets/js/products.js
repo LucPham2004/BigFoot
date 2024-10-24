@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Thiết lập nội dung cho sản phẩm
                 productContainer.innerHTML = `
-                    <a href="/products.html?${convertProductName(product.productName)}&id=${product.id}">
+                    <a href="products.html?${convertProductName(product.productName)}&id=${product.id}">
                         <img alt="Giày similar" src="${imageBaseURL + product.productImage}">
                         <p class="product-name">${product.productName}</p>
                         <p class="description">${product.productDescription}</p>
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </p>
                     </a>
                     <div class="product-tip" id="product-tip">
-                        <a href="/shop.html?category=${product.categories}">
+                        <a href="shop.html?category=${product.categories}">
                             <button id="similarBtn" type="button">
                                 <i class="fas fa-shopping-cart" style="font-size: 20px;"></i> Xem sản phẩm tương tự
                             </button>
