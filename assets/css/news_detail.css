@@ -45,6 +45,7 @@ body {
 
 .detailed-content p {
     font-size: 16px;
+    text-align: justify;
     color: #333;
 }
 
@@ -63,7 +64,6 @@ body {
 }
 
 .social-share button {
-    background-color: white;
     margin-right: 10px;
     border: none;
     cursor: pointer;

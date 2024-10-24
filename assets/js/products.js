@@ -126,58 +126,81 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Display Similar products
-// document.addEventListener('DOMContentLoaded', () => {
-//     fetch(domain + '/api/v1/products')
-//         .then(response => response.json())
-//         .then(data => {
-//             const similarProductsTop = document.getElementById('similar-products-top');
-//             const carouselInner = document.getElementById('carousel-inner');
-//             let topProductsHTML = '';
+document.addEventListener('DOMContentLoaded', () => {
+    fetch(domain + '/api/v1/products')
+        .then(response => response.json())
+        .then(data => {
+            const similarProductsTop = document.getElementById('similar-products-top');
+            const carouselInner = document.getElementById('carousel-inner');
+            let topProductsHTML = '';
 
-//             const firstCarouselItem = carouselInner.querySelector('.carousel-item:nth-child(1)');
-//             const secondCarouselItem = carouselInner.querySelector('.carousel-item:nth-child(2)');
+            const firstCarouselItem = carouselInner.querySelector('.carousel-item:nth-child(1)');
+            const secondCarouselItem = carouselInner.querySelector('.carousel-item:nth-child(2)');
 
-//             let carouselItemInnerContainer1 = document.createElement('div');
-//             carouselItemInnerContainer1.classList.add('carousel-item-innerContainer');
+            let carouselItemInnerContainer1 = document.createElement('div');
+            carouselItemInnerContainer1.classList.add('carousel-item-innerContainer');
 
-//             let carouselItemInnerContainer2 = document.createElement('div');
-//             carouselItemInnerContainer2.classList.add('carousel-item-innerContainer');
+            let carouselItemInnerContainer2 = document.createElement('div');
+            carouselItemInnerContainer2.classList.add('carousel-item-innerContainer');
 
-//             data.forEach((product, index) => {
-//                 // Tạo một div mới để chứa thông tin sản phẩm
-//                 let productContainer = document.createElement('div');
-//                 productContainer.classList.add('similar-item');
+            data.forEach((product, index) => {
+                // Tạo một div mới để chứa thông tin sản phẩm
+                let productContainer = document.createElement('div');
+                productContainer.classList.add('similar-item');
 
-//                 price = product.productPrice * (100 - product.discountPercent) / 100;
+                price = product.productPrice * (100 - product.discountPercent) / 100;
 
-//                 // Thiết lập nội dung cho sản phẩm
-//                 productContainer.innerHTML = `
-//                     <a href="/products.html?${convertProductName(product.productName)}&id=${product.id}">
-//                         <img alt="Giày similar" src="${imageBaseURL + product.productImage}">
-//                         <p class="product-name">${product.productName}</p>
-//                         <p class="description">${product.productDescription}</p>
-//                         <p class="price">${formatNumber(price)} đ
-//                             <span class="originPrice" style="text-decoration: line-through;">${formatNumber(product.productPrice)} đ</span>
-//                         </p>
-//                     </a>
-//                 `;
+                // Thiết lập nội dung cho sản phẩm
+                productContainer.innerHTML = `
+                    <a href="/products.html?${convertProductName(product.productName)}&id=${product.id}">
+                        <img alt="Giày similar" src="${imageBaseURL + product.productImage}">
+                        <p class="product-name">${product.productName}</p>
+                        <p class="description">${product.productDescription}</p>
+                        <p class="price">${formatNumber(price)} đ
+                            <span class="originPrice" style="text-decoration: line-through;">${formatNumber(product.productPrice)} đ</span>
+                        </p>
+                    </a>
+                    <div class="product-tip" id="product-tip">
+                        <a href="/shop.html?category=${product.categories}">
+                            <button id="similarBtn" type="button">
+                                <i class="fas fa-shopping-cart" style="font-size: 20px;"></i> Xem sản phẩm tương tự
+                            </button>
+                        </a>
+                    </div>
+                `;
 
-//                 if (index < 4) {
-//                     topProductsHTML += productContainer.outerHTML;
-//                 } else if (index >= 4 && index < 8) {
-//                     carouselItemInnerContainer1.appendChild(productContainer);
-//                 } else if (index >= 8 && index < 12) {
-//                     carouselItemInnerContainer2.appendChild(productContainer);
-//                 }
-//             });
+                if (index < 4) {
+                    topProductsHTML += productContainer.outerHTML;
+                } else if (index >= 4 && index < 8) {
+                    carouselItemInnerContainer1.appendChild(productContainer);
+                } else if (index >= 8 && index < 12) {
+                    carouselItemInnerContainer2.appendChild(productContainer);
+                }
+            });
 
-//             similarProductsTop.innerHTML = topProductsHTML;
-//             firstCarouselItem.appendChild(carouselItemInnerContainer1);
-//             secondCarouselItem.appendChild(carouselItemInnerContainer2);
+            similarProductsTop.innerHTML = topProductsHTML;
+            firstCarouselItem.appendChild(carouselItemInnerContainer1);
+            secondCarouselItem.appendChild(carouselItemInnerContainer2);
 
-//         })
-//         .catch(error => console.error('Error fetching products:', error));
-// });
+            
+            const items = document.querySelectorAll('.similar-item');
+            const productTips = document.querySelectorAll('.product-tip');
+
+            items.forEach((item, index) => {
+                const productTip = productTips[index];
+                
+                item.addEventListener('mouseenter', (e) => {
+                    productTip.style.display = 'block';
+                });
+
+                item.addEventListener('mouseleave', () => {
+                    productTip.style.display = 'none';
+                });
+            });
+
+        })
+        .catch(error => console.error('Error fetching products:', error));
+});
 
 function addProductImages(productImage) {
     if (typeof productImage !== 'string') {
