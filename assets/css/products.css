@@ -3,16 +3,18 @@ body{
 }
 
 .products-info .product-name{
-    font-size: 25px;
+    font-size: 28px;
 }
 .products-info .price{
     font-size: 20px;
     color: #ff0000;
 }
 .products-info .description{
-    font-size: 17px;
+    font-size: 18px;
 }
-
+.products-info .Type, .products-info .productReview{
+    font-size: 18px;
+}
 .product-name{
     font-size: 20px;
     margin-bottom: 5px;
@@ -20,6 +22,9 @@ body{
 .price{
     font-size: 17px;
     margin-bottom: 0;
+}
+.originPrice {
+    margin: 0;
 }
 .description{
     font-size: 12px;

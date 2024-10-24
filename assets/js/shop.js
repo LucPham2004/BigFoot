@@ -132,6 +132,7 @@ async function showProductsInShopPage(products){
                     </button>
                 </a>
             </div>
+            <div class="discount-banner">${product.discountPercent}% OFF</div>
         `;
 
         productsContainer.appendChild(productItem);

@@ -48,6 +48,7 @@ async function displayProducts() {
                         </button>
                     </a>
                 </div>
+                <div class="discount-banner">${product.discountPercent}% OFF</div>
             </div>
         `;
     }
