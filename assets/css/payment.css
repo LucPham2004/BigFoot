@@ -84,6 +84,8 @@
 .summary {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 .customer_info {
@@ -93,14 +95,10 @@
 }
 .order_total {
     display: flex;
+    gap: 20px;
 }
 .summary h6 {
-    margin-left: 61%;
-    width: 15%;
     font-weight: bold;
-}
-.order_total p {
-    width: 8%;
 }
 #sumPrice {
     color: red;

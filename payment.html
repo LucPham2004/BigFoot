@@ -26,11 +26,6 @@
             </div>
             <div id="products"></div>
             <div class="summary">
-                <div class="order_total">
-                    <h6>Tổng cộng:</h6>
-                    <p id="sumQuantity"></p>
-                    <p id="sumPrice"></p>
-                </div>
                 <div class="form-container">
                     <h2>Thông tin khách hàng</h2>
                     <form>
@@ -45,13 +40,16 @@
             
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
-            
-                        <input type="submit" value="Xác nhận">
+                        
                     </form>
+                    <div class="order_total">
+                        <h6>Tổng cộng đơn hàng:</h6>
+                        <p id="sumPrice"></p>
+                    </div>
+                    <div id="placeOrder">
+                        <button type="button" id="placeOrderBtn">Đặt Hàng</button>
+                    </div>
                 </div>
-            </div>
-            <div id="placeOrder">
-                <button type="button" id="placeOrderBtn">Đặt Hàng</button>
             </div>
         </div>
     </div>

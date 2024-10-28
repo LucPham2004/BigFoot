@@ -40,7 +40,7 @@ function displayProductsInCart(cart) {
         orderContainer.appendChild(cartItem);
     });
 
-    document.getElementById("sumQuantity").innerHTML = sumQuantity;
+    //document.getElementById("sumQuantity").innerHTML = sumQuantity;
     document.getElementById("sumPrice").innerHTML = `${formatNumber(parseInt(sumPrice))} đ`;
 
 }
