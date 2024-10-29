@@ -93,17 +93,20 @@ document.addEventListener("DOMContentLoaded", function() {
                         <a href="">Liên hệ</a>
                         <a href="">FAQs</a>
                         <a href="">Tìm cửa hàng gần bạn</a>
+                        <a href="">Hướng dẫn đặt hàng</a>
                     </div>
                     <div class="footer-links">
                         <a href="shop.html">Tất cả sản phẩm</a>
                         <a href="">Trạng thái đơn hàng</a>
                         <a href="">Thông tin vận chuyển</a>
+                        <a href="">Giao hàng và nhận hàng</a>
                         <a href="">Trả hàng</a>
                     </div>
                     <div class="footer-links">
                         <a href="">Giới thiệu</a>
                         <a href="">Cách chọn cỡ giày</a>
                         <a href="shop.html">Dành cho bạn</a>
+                        <a href="">Bảo mật</a>
                     </div>
                 </div>
                 <div class="para">

@@ -209,8 +209,7 @@ body{
 .reviewForm-container label {
     font-weight: bold;
     color: #333;
-    margin-right: 10px;
-    width: 80px;
+    width: 100px;
 }
 
 .reviewForm-container input[type="text"],
@@ -221,7 +220,6 @@ body{
     border-radius: 5px;
     font-size: 14px;
     color: #333;
-    margin-right: 10px;
 }
 
 .reviewForm-container input[type="text"] {
